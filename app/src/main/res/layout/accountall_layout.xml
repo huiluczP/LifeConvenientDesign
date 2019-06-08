@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/calendaryearview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/yeardefault"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/calendarView"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"/>
+
+    <com.haibin.calendarview.CalendarView
+        android:orientation="vertical"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:current_month_text_color="#333333"
+        app:current_month_lunar_text_color="#CFCFCF"
+        app:min_year="2019"
+        app:max_year="2020"
+        app:other_month_text_color="#e1e1e1"
+        app:other_month_lunar_text_color="#e1e1e1"
+        app:scheme_text="假"
+        app:scheme_text_color="#333"
+        app:scheme_theme_color="#128c4b"
+        app:selected_lunar_text_color="#CFCFCF"
+        app:selected_text_color="#333"
+        app:selected_theme_color="#108cd4"
+        app:week_background="#fff"
+        app:week_text_color="#111"
+        app:week_start_with="mon"
+        app:year_view_day_text_color="#333333"
+        app:year_view_day_text_size="9sp"
+        app:year_view_month_text_color="#ff0000"
+        app:year_view_month_text_size="20sp"
+        app:month_view_show_mode="mode_all"
+        app:year_view_scheme_color="#f17706"
+        app:layout_constraintTop_toBottomOf="@id/calendaryearview"/>
+    <TextView
+        android:id="@+id/additem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="@string/addlabel"
+        app:layout_constraintTop_toBottomOf="@id/calendarView"
+        app:layout_constraintBottom_toTopOf="@id/listscroll"
+        android:gravity="center"/>
+    <ScrollView
+        android:id="@+id/listscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/additem">
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView
+            android:id="@+id/accountlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

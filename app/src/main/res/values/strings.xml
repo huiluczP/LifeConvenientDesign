@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">LifeConvenientDesign</string>
+
+    <!--主页面-->
+    <string name="tab_first">每日</string>
+    <string name="tab_second">账单</string>
+    <string name="tab_third">我的</string>
+
+    <!-- 个人主界面使用 -->
+    <string name="namedefault">mage</string>
+    <string name="genderdefault">保密</string>
+    <string name="leveldefault">LV120</string>
+    <string name="contentdefault">写点什么吧</string>
+    <string name="outlabel">出击次数:</string>
+    <string name="successlabel">获胜次数:</string>
+    <string name="successrate">获胜比率:</string>
+    <string name="defaultrate">100%</string>
+    <string name="selfinfo">修改个人信息</string>
+    <string name="loginsumdefault">总的登录天数: 0</string>
+    <string name="acountsumdefault">总的记账次数: 0</string>
+    <string name="communicationlabel">个人通讯录</string>
+    <string name="comm_name_default">联系人</string>
+    <string name="comm_tel_default">837261</string>
+
+    <!-- 底端弹出选项使用-->
+    <string name="camera">相机</string>
+    <string name="album">相册</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+
+    <!--个人信息修改页面使用-->
+    <string name="changelabel">修改个人信息</string>
+    <string name="changenamelabel">姓名:</string>
+    <string name="changegenderlabel">性别:</string>
+    <string name="changecontentlabel">写点动态嗷</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="secret">保密</string>
+    <string name="commlabel">通讯录</string>
+    <string name="addpwdlabel">+添加账号信息</string>
+
+    <!--账户列表显示-->.
+    <string name="pwddefault">密码</string>
+    <string name="userdefault">用户名</string>
+    <string name="infodefault">账户信息</string>
+    <string name="userdelete">删除</string>
+
+    <!--账号信息存放-->
+    <string name="adduserlabel">添加一个账号和密码试试</string>
+    <string name="userlabel">账号:</string>
+    <string name="pwdlabel">密码:</string>
+    <string name="infolabel">账号相关:</string>
+
+    <!--记账使用-->
+    <string name="typeeat">餐饮</string>
+    <string name="typestudy">学习</string>
+    <string name="typeother">其它</string>
+    <string name="itemcost">-0.00</string>
+    <string name="yeardefault">1900年1月</string>
+    <string name="addlabel">+添加账单</string>
+    <string name="paycoatlabel">金额</string>
+    <string name="paytypelabel">付款类型</string>
+
+    <!--添加账单-->
+    <string name="confirmadd">确认添加</string>
+    <string name="addtimedefault">账单插入时间为1900年1月1日</string>
+    <string name="back">返回</string>
+    <string name="money">￥</string>
+
+    <!--天气使用-->
+    <string name="cityshow">当前所在城市为: </string>
+    <string name="citydefault">杭州</string>
+    <string name="weathernowdefault">晴朗多云</string>
+    <string name="temperaturedefault">20℃</string>
+    <string name="weatherlabel">今日天气</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/frgmentview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/ly_tab_bar"/>
+
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tabfirst"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_first"
+            android:textColor="@drawable/tabtext"
+            android:textSize="16sp"
+            android:background="@drawable/tabtextborder"/>
+
+        <TextView
+            android:id="@+id/tabsecond"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_second"
+            android:textColor="@drawable/tabtext"
+            android:textSize="16sp"
+            android:background="@drawable/tabtextborder"/>
+
+        <TextView
+            android:id="@+id/tabthird"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tab_third"
+            android:textColor="@drawable/tabtext"
+            android:textSize="16sp"
+            android:background="@drawable/tabtextborder"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

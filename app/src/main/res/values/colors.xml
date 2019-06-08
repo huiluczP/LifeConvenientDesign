@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#F36397</color>
+
+    <color name="headimgborder">#A59F9F</color>
+    <color name="textselect">#3BA288</color>
+    <color name="textunselect">#575454</color>
+
+    <color name="costcolor">#F11414</color>
+    <color name="tabground">#ED42FF3B</color>
+    <color name="backcolornoimg">#CC14F1D7</color>
+</resources>

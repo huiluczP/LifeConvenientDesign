@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ProgressBar
+        android:id="@+id/process"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/dailyimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="51dp" />
+    <TextView
+        android:id="@+id/citylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cityshow"
+        app:layout_constraintBottom_toBottomOf="@+id/cityname"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cityname"
+        android:textSize="20sp"
+        android:background="@color/backcolornoimg" />
+    <TextView
+        android:id="@+id/cityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/citydefault"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/citylabel"
+        android:textSize="30sp"
+        android:layout_marginTop="10sp"
+        android:background="@color/backcolornoimg" />
+    <TextView
+        android:id="@+id/weatherLabel"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/weatherlabel"
+        app:layout_constraintTop_toBottomOf="@id/cityname"
+        app:layout_constraintBottom_toTopOf="@id/weatherlayout"
+        android:layout_marginTop="100sp" />
+
+    <LinearLayout
+        android:id="@+id/weatherlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherLabel"
+        android:background="@drawable/weatherborder">
+
+        <TextView
+            android:id="@+id/weathernow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="@string/weathernowdefault"
+            android:textSize="35dp"
+            android:layout_margin="8sp"
+            android:background="@color/backcolornoimg" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/temperaturedefault"
+            android:textSize="100sp"
+            android:layout_margin="8sp"
+            android:background="@color/backcolornoimg" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
