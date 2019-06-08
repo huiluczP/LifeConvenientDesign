@@ -51,7 +51,7 @@ public class MyInfoFragment extends Fragment {
     private TextView content;
     private TextView add;
 
-    private static int MODE = Context.MODE_WORLD_READABLE + Context.MODE_WORLD_WRITEABLE;
+    private static int MODE = Context.MODE_ENABLE_WRITE_AHEAD_LOGGING;
     private static final String PREFERENCE_NAME = "info";
     private SharedPreferences info;
     CommunicationAdapter communicationAdapter;
@@ -163,7 +163,8 @@ public class MyInfoFragment extends Fragment {
     }
 
     private void initText(){
-        info=getActivity().getSharedPreferences(PREFERENCE_NAME,MODE);
+        info=getActivity().getSharedPreferences(PREFERENCE_NAME,Context.MODE_PRIVATE);
+
         String nametext=info.getString("name","回炉重造P");
         String gendertext=info.getString("gender","保密");
         String contenttext=info.getString("content","写点什么吧");
